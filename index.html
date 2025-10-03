@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sabores Boricuas — Blog Culinario</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="bandera-bg"></div>
+
+  <header class="site-header box">
+    <div class="container header-inner">
+ <style>
+    .logo {
+      font-family: 'Poppins', sans-serif; 
+      font-weight: 700; 
+      font-size: 1.2em; 
+      color: #1e90ff; 
+      margin: 0;                
+      text-decoration: none;
+    }
+  </style>
+    <a href="#" class="logo">⋆SAYONARA⋆</a>
+
+      <!-- Botón hamburguesa -->
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Menú">☰</button>
+
+      <nav id="primary-nav" class="primary-nav" aria-hidden="true">
+        <ul>
+          <li><a href="#recetas">Recetas</a></li>
+          <li><a href="#categorias">Categorías</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button id="themeToggle" class="btn-ghost">Modo oscuro</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container box">
+        <h1>Blog Culinario</h1>
+        <p class="lead">La cocina de Puerto Rico, es el lugar donde los ingredientes simples se convierten en recuerdos inolvidables</p>
+        <a class="btn" href="#recetas">Explorar recetas</a>
+      </div>
+    </section>
+
+    <!-- RECETAS -->
+    <section id="recetas" class="recetas">
+      <div class="container box">
+        <h2>Recetas destacadas</h2>
+        <div class="recetas-grid">
+          <article class="card">
+            <img src="IMG_7789.jpg" alt="Mofongo">
+            <div class="card-body">
+              <h3><a href="receta1.html">Mofongo con camarones</a></h3>
+              <p>Plátano frito con camarones en salsa criolla.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="IMG_7796.jpg" alt="Pitorro de coco">
+            <div class="card-body">
+              <h3><a href="receta2.html">Pitorro de coco</a></h3>
+              <p>Bebida artesanal puertorriqueña hecha con ron y coco.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="IMG_7793.jpg" alt="Tembleque">
+            <div class="card-body">
+              <h3><a href="receta3.html">Tembleque</a></h3>
+              <p>Postre delicado de coco y suave.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section id="categorias" class="categorias">
+      <div class="container box">
+        <h2>Categorías</h2>
+        <div class="categorias-grid">
+          <div class="categoria"><i class="fa-solid fa-utensils"></i><h4>Entradas</h4></div>
+          <div class="categoria"><i class="fa-solid fa-drumstick-bite"></i><h4>Platos</h4></div>
+          <div class="categoria"><i class="fa-solid fa-bread-slice"></i><h4>Panadería</h4></div>
+          <div class="categoria"><i class="fa-solid fa-ice-cream"></i><h4>Postres</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="container box grid-two">
+        <div>
+          <h2>¡Holaa! soy Amy</h2>
+          <p>La cocina para mí siempre ha sido un lugar de encuentro y cariño. Vengo de una familia donde los sabores, los aromas y las risas se mezclan en cada comida, y aprendí que nada sabe tan bien como lo que se comparte con los seres queridos. Cocinar no es solo preparar alimentos: es crear momentos, recuerdos y conexiones que se quedan en el corazón. Cada ingrediente tiene su historia, cada plato es un recuerdo y cada reunión alrededor de la mesa es un acto de amor silencioso que nos une más de lo que a veces las palabras pueden expresar. Este blog nace de ese amor por la cocina en familia. Cada receta que comparto tiene un pedacito de mi historia, de esos momentos en los que nos sentamos juntos a disfrutar de un platillo, a charlar, reír y convivir. Quiero que aquí encuentres inspiración para llevar a tu mesa no solo comida deliciosa, sino también experiencias que hagan que cada encuentro sea especial. La cocina es un espacio donde la creatividad se encuentra con la tradición, donde los sabores se mezclan con la memoria y donde cada preparación es un puente entre el pasado y el presente.
+          </p>
+        </div>
+        <div class="about-photo">
+          <img src="IMG_7795.jpg" alt="La comida es el ingrediente que une a la familia y a los amigos.">
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="newsletter">
+      <div class="container box">
+        <h2>Suscríbete</h2>
+        <form id="subscribeForm" class="newsletter-form">
+          <input type="email" id="email" placeholder="tucorreo@ejemplo.com" required>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+        <p id="subscribeMsg"></p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="container box">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="email" placeholder="Tu correo" required>
+          <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container box footer-inner">
+      <p>© <span id="currentYear"></span> Amy Molina Sánchez</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

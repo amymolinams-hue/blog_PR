@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (themeToggle) themeToggle.textContent = 'Modo oscuro';
     }
   }
+  
   const savedTheme = localStorage.getItem('site-theme');
   if (savedTheme) setTheme(savedTheme);
   
@@ -47,25 +48,27 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const email = emailInput.value.trim();
-      
       if (!email.includes('@')) {
         msg.textContent = 'Correo inválido';
         msg.style.color = 'var(--accent)';
         return;
       }
-      
       msg.textContent = '¡Gracias por suscribirte!';
       msg.style.color = 'var(--accent-2)';
       form.reset();
     });
   }
   
-  // --- CONTACT FORM (solo mensaje de confirmación) ---
+  // --- CONTACTO ---
   const contactForm = document.querySelector('.contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('¡Gracias por tu mensaje! Te responderemos pronto.');
+      const confirm = document.createElement("p");
+      confirm.textContent = "¡Tu mensaje fue enviado con éxito!";
+      confirm.style.color = "var(--accent)";
+      contactForm.appendChild(confirm);
+      setTimeout(() => confirm.remove(), 4000);
       contactForm.reset();
     });
   }

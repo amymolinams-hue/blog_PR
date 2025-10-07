@@ -3,38 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sabores Boricuas — Blog Culinario</title>
-
-  <!-- Google Fonts -->
+  <title>Sabores Argentinos — Blog Culinario</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bandera-bg"></div>
+  <div class="bandera-ar-bg"></div>
 
   <header class="site-header box">
     <div class="container header-inner">
- <style>
-    .logo {
-      font-family: 'Poppins', sans-serif; 
-      font-weight: 700; 
-      font-size: 1.2em; 
-      color: #1e90ff; 
-      margin: 0;                
-      text-decoration: none;
-    }
-  </style>
-    <a href="#" class="logo">⋆SAYONARA⋆</a>
-
-      <!-- Botón hamburguesa -->
+      <a href="#" class="logo">Sabores Argentinos</a>
       <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Menú">☰</button>
-
       <nav id="primary-nav" class="primary-nav" aria-hidden="true">
         <ul>
           <li><a href="#recetas">Recetas</a></li>
+          <li><a href="#menu">Menú</a></li>
           <li><a href="#categorias">Categorías</a></li>
           <li><a href="#sobre-mi">Sobre mí</a></li>
           <li><a href="#newsletter">Newsletter</a></li>
@@ -46,46 +30,55 @@
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="hero">
       <div class="container box">
-        <h1>Blog Culinario</h1>
-        <p class="lead">La cocina de Puerto Rico, es el lugar donde los ingredientes simples se convierten en recuerdos inolvidables</p>
-        <a class="btn" href="#recetas">Explorar recetas</a>
+        <h1>Sabores Argentinos</h1>
+        <p class="lead">“El asado es el abrazo que se sirve en la mesa.”</p>
+        <a class="btn" href="#recetas">Ver recetas</a>
       </div>
     </section>
 
-    <!-- RECETAS -->
     <section id="recetas" class="recetas">
       <div class="container box">
         <h2>Recetas destacadas</h2>
         <div class="recetas-grid">
           <article class="card">
-            <img src="IMG_7789.jpg" alt="Mofongo">
+            <img src="IMG_7880.jpg" alt="Empanadas argentinas">
             <div class="card-body">
-              <h3><a href="receta1.html">Mofongo con camarones</a></h3>
-              <p>Plátano frito con camarones en salsa criolla.</p>
+              <h3><a href="receta1.html">Empanadas criollas</a></h3>
+              <p>La tradición en cada bocado de carne jugosa y especias.</p>
             </div>
           </article>
           <article class="card">
-            <img src="IMG_7796.jpg" alt="Pitorro de coco">
+            <img src="IMG_7882.jpg" alt="Asado argentino">
             <div class="card-body">
-              <h3><a href="receta2.html">Pitorro de coco</a></h3>
-              <p>Bebida artesanal puertorriqueña hecha con ron y coco.</p>
+              <h3><a href="receta2.html">Asado argentino</a></h3>
+              <p>Carne a las brasas, símbolo de amistad y familia.</p>
             </div>
           </article>
           <article class="card">
-            <img src="IMG_7793.jpg" alt="Tembleque">
+            <img src="IMG_7884.jpg" alt="Alfajores">
             <div class="card-body">
-              <h3><a href="receta3.html">Tembleque</a></h3>
-              <p>Postre delicado de coco y suave.</p>
+              <h3><a href="receta3.html">Alfajores de maicena</a></h3>
+              <p>Dulzura clásica con dulce de leche y coco rallado.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- CATEGORÍAS -->
+    <section id="menu" class="menu">
+      <div class="container box">
+        <h2>Menú de comida</h2>
+        <div class="menu-grid">
+          <div class="menu-item"><h4>Milanesa con papas</h4><p>Crocante y dorada, con papas fritas.</p></div>
+          <div class="menu-item"><h4>Provoleta</h4><p>Queso a la parrilla con especias.</p></div>
+          <div class="menu-item"><h4>Choripán</h4><p>Chorizo en pan con chimichurri.</p></div>
+          <div class="menu-item"><h4>Mate</h4><p>La bebida que une a todos en Argentina.</p></div>
+        </div>
+      </div>
+    </section>
+
     <section id="categorias" class="categorias">
       <div class="container box">
         <h2>Categorías</h2>
@@ -98,40 +91,52 @@
       </div>
     </section>
 
-    <!-- SOBRE MÍ -->
     <section id="sobre-mi" class="sobre-mi">
       <div class="container box grid-two">
         <div>
-          <h2>¡Holaa! soy Amy</h2>
-          <p>La cocina para mí siempre ha sido un lugar de encuentro y cariño. Vengo de una familia donde los sabores, los aromas y las risas se mezclan en cada comida, y aprendí que nada sabe tan bien como lo que se comparte con los seres queridos. Cocinar no es solo preparar alimentos: es crear momentos, recuerdos y conexiones que se quedan en el corazón. Cada ingrediente tiene su historia, cada plato es un recuerdo y cada reunión alrededor de la mesa es un acto de amor silencioso que nos une más de lo que a veces las palabras pueden expresar. Este blog nace de ese amor por la cocina en familia. Cada receta que comparto tiene un pedacito de mi historia, de esos momentos en los que nos sentamos juntos a disfrutar de un platillo, a charlar, reír y convivir. Quiero que aquí encuentres inspiración para llevar a tu mesa no solo comida deliciosa, sino también experiencias que hagan que cada encuentro sea especial. La cocina es un espacio donde la creatividad se encuentra con la tradición, donde los sabores se mezclan con la memoria y donde cada preparación es un puente entre el pasado y el presente.
+          <h2>SOBRE MÍ</h2>
+          <p>
+            Holaa, soy Miguel. Me gusta la cocina porque siento que la comida tiene una relación muy especial con las personas: une, conecta y transmite emociones. Cada platillo puede contar una historia, recordar un momento o incluso expresar cariño sin necesidad de palabras. Para mí, cocinar no solo es preparar alimentos, sino crear experiencias que acercan a la familia, a los amigos y a quienes comparten la mesa.
           </p>
         </div>
-        <div class="about-photo">
-          <img src="IMG_7795.jpg" alt="La comida es el ingrediente que une a la familia y a los amigos.">
+        <div class="about-photo"><img src="IMG_7886.jpg" alt="Foto de miguel"></div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="newsletter">
+      <div class="container newsletter-box">
+        <i class="fa-solid fa-envelope-open-text newsletter-icon"></i>
+        <div class="newsletter-text">
+          <h2>¡Únete!</h2>
+          <p>Recibe recetas, tips de cocina y novedades de la gastronomía argentina en tu correo.</p>
+          <form id="subscribeForm" class="newsletter-form">
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+            <button class="btn" type="submit">Suscribirme</button>
+          </form>
+          <p id="subscribeMsg"></p>
         </div>
       </div>
     </section>
 
-    <!-- NEWSLETTER -->
-    <section id="newsletter" class="newsletter">
-      <div class="container box">
-        <h2>Suscríbete</h2>
-        <form id="subscribeForm" class="newsletter-form">
-          <input type="email" id="email" placeholder="tucorreo@ejemplo.com" required>
-          <button class="btn" type="submit">Enviar</button>
-        </form>
-        <p id="subscribeMsg"></p>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
+    <!-- Contacto -->
     <section id="contacto" class="contacto">
-      <div class="container box">
-        <h2>Contacto</h2>
+      <div class="container contacto-box">
+        <h2>📩 Ponte en contacto</h2>
+        <p> ¡Escríbeme!</p>
         <form class="contact-form">
-          <input type="text" placeholder="Tu nombre" required>
-          <input type="email" placeholder="Tu correo" required>
-          <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+          <div class="form-group">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Tu correo" required>
+          </div>
+          <div class="form-group">
+            <i class="fa-solid fa-message"></i>
+            <textarea placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+          </div>
           <button type="submit" class="btn">Enviar mensaje</button>
         </form>
       </div>
@@ -140,7 +145,7 @@
 
   <footer class="site-footer">
     <div class="container box footer-inner">
-      <p>© <span id="currentYear"></span> Amy Molina Sánchez</p>
+      <p>© <span id="currentYear"></span> Jose Miguel Cerritos Basilio </p>
     </div>
   </footer>
 
